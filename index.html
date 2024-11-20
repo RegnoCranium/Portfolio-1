@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="lang-switcher">
+      <div class="lang-blend">
+        <button class="lang-btn" data-lang="uk">UA 🇺🇦</button>
+        <button class="lang-btn" data-lang="en">EN 🇬🇧</button>
+      </div>
+    </div>
+    <section class="top-section full-screen-section">
+      <div class="left">
+        <h1
+          data-lang-en="Need a Front-end developer?"
+          data-lang-uk="Потрібен Front-end розробник?"
+        >
+          Need a front-end developer?
+        </h1>
+      </div>
+      <div class="right">
+        <img class="intro-svg html-svg" src="imgs/html.svg" alt="html5 icon" />
+        <img class="intro-svg css-svg" src="imgs/css.svg" alt="css icon" />
+        <img class="intro-svg js-svg" src="imgs/js.svg" alt="js icon" />
+        <img
+          class="intro-svg react-svg"
+          src="imgs/react.svg"
+          alt="react icon"
+        />
+      </div>
+    </section>
+    <section class="full-screen-section about-me">
+      <h1 data-lang-en="Briefly about me" data-lang-uk="Про мене">
+        Briefly about me
+      </h1>
+      <div class="flex-row gap-10">
+        <img
+          class="hidden delay-250ms"
+          src="https://placehold.co/500x500"
+          alt="Photo of a person"
+        />
+        <div
+          data-lang-en="I'm a front-end developer with a year of coding experience. 
+          I love learning new things and have built several projects using React and Tailwind CSS, including challenges from Frontend Mentor. 
+          Through these projects, I've gained good knowledge of front-end development and the tools I work with. I'm ready to take on new challenges and keep growing as a developer."
+          data-lang-uk="Я фронтенд розробник з роком досвіду в програмуванні. 
+          Люблю вчитися новому та маю досвід розробки проєктів з використанням React і Tailwind CSS, зокрема завдання з Frontend Mentor. 
+          Через ці проєкти я добре опанував фронтенд розробку та інструменти з якими працюю. Я готовий до нових завдань та постійного розвитку як розробник."
+          class="hidden"
+        >
+          I'm a front-end developer with a year of coding experience. I love
+          learning new things and have built several projects using React and
+          Tailwind CSS, including challenges from Frontend Mentor. Through these
+          projects, I've gained good knowledge of front-end development and the
+          tools I work with. I'm ready to take on new challenges and keep
+          growing as a developer.
+        </div>
+      </div>
+    </section>
+    <section class="skills-section">
+      <h1 data-lang-en="My skills" data-lang-uk="Мої навички">My skills</h1>
+      <div class="skills-container">
+        <div id="react-card" class="skill-card flex-row hidden delay-250ms">
+          <div class="skills-item-bg-container react-bg">
+            <img class="skills-svg" src="imgs/react.svg" alt="react icon" />
+          </div>
+          <div
+            class="skills-item-info"
+            data-lang-en="I'm skilled in using React's key features like managing state, updating components, and rendering them efficiently. 
+            I have strong experience with hooks, the context API, and building reusable components."
+            data-lang-uk="Добре використовую ключові можливості React: керування станом, оновлення компонентів та їх ефективний рендеринг. 
+            Маю великий досвід роботи з хуками, контекст API та створенням багаторазових компонентів."
+          >
+            I'm skilled in using React's key features like managing state,
+            updating components, and rendering them efficiently. I have strong
+            experience with hooks, the context API, and building reusable
+            components.
+          </div>
+        </div>
+        <div id="js-card" class="skill-card flex-row hidden">
+          <div class="skills-item-bg-container js-bg">
+            <img class="skills-svg" src="imgs/js.svg" alt="js icon" />
+          </div>
+          <div
+            class="skills-item-info"
+            data-lang-en="Strong knowledge of JavaScript basics like closures, promises, and how code runs. 
+            Good with modern JS features, async programming, and working with DOM. Can write clean code and solve coding problems."
+            data-lang-uk="Хороше знання основ JavaScript: замикання, проміси та робота коду. Вмію працювати з сучасним JS, асинхронним програмуванням та DOM. Пишу чистий, зрозумілий код."
+          >
+            Strong knowledge of JavaScript basics like closures, promises, and
+            how code runs. Good with modern JS features, async programming, and
+            working with DOM. Can write clean code and solve coding problems.
+          </div>
+        </div>
+        <div id="css-card" class="skill-card flex-row hidden delay-250ms">
+          <div class="skills-item-bg-container css-bg">
+            <img class="skills-svg" src="imgs/css.svg" alt="css icon" />
+          </div>
+          <div
+            class="skills-item-info"
+            data-lang-en="Good at making responsive websites using mobile-first and desktop-first designs. Skilled with flexbox, grid, and animations. 
+            Experienced with Tailwind CSS for fast and consistent styling."
+            data-lang-uk="Вмію створювати адаптивні сайти, використовуючи mobile-first та desktop-first підходи. Добре володію flexbox та grid. Маю великий досвід роботи з Tailwind CSS."
+          >
+            Good at making responsive websites using mobile-first and
+            desktop-first designs. Skilled with flexbox, grid, and animations.
+            Experienced with Tailwind CSS for fast and consistent styling.
+          </div>
+        </div>
+        <div id="html-card" class="skill-card flex-row hidden">
+          <div class="skills-item-bg-container html-bg">
+            <img class="skills-svg" src="imgs/html.svg" alt="html icon" />
+          </div>
+          <div
+            class="skills-item-info"
+            data-lang-en="Great understanding of semantic HTML5 structure. Good at creating accessible, organized content. 
+            Know how to use meta tags and SEO practices to make websites perform better and rank higher."
+            data-lang-uk="Глибоке розуміння семантичного HTML5. Вмію створювати доступний, структурований контент. Знаю як використовувати мета-теги та SEO для покращення сайтів."
+          >
+            Great understanding of semantic HTML5 structure. Good at creating
+            accessible, organized content. Know how to use meta tags and SEO
+            practices to make websites perform better and rank higher.
+          </div>
+        </div>
+        <div class="person-container hidden special hidden-person">
+          <img class="person" src="./imgs/person-solid.svg" alt="Person icon" />
+        </div>
+        <div class="x-container hidden special hidden-x">
+          <img src="./imgs/gradient-x.svg" alt="X icon" />
+        </div>
+      </div>
+    </section>
+    <section class="projects-section">
+      <h1 data-lang-en="My Projects" data-lang-uk="Мої проєкти">My Projects</h1>
+      <div class="carousel-container">
+        <!-- Add sr-only! -->
+        <button id="btn-left">
+          <img src="./imgs/chevron-left.svg" alt="Chevron left icon" />
+        </button>
+        <div class="carousel-display">
+          <div class="carousel">
+            <div class="project-card">
+              <img src="imgs/sneaker.jpg" alt="img" />
+              <div class="project-info">
+                <p
+                  data-lang-en="E-commerce product page with thumbnail navigation and lightbox gallery for enhanced image viewing."
+                  data-lang-uk="Сторінка товару з каруселлю та лайтбоксом для перегляду зображень."
+                >
+                  E-commerce product page with thumbnail navigation and lightbox
+                  gallery for enhanced image viewing.
+                </p>
+                <div class="links">
+                  <a
+                    class="flex-row"
+                    href="https://github.com/RegnoCranium/frontend-mentor-folder-starter/tree/main/ecommerce-app"
+                    ><img
+                      src="./imgs/github-brands-solid.svg"
+                      alt="Github icon"
+                    /><span>Github</span></a
+                  >
+                  <a
+                    class="flex-row"
+                    href="https://frontend-mentor-folder.vercel.app"
+                    ><img src="./imgs/logo-vercel.svg" alt="Vercel icon" /><span
+                      >Live site</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="imgs/countries.jpg" alt="img" />
+              <div class="project-info">
+                <p
+                  data-lang-en="React app that uses the REST Countries API with React Router and theme switching using Tailwind CSS."
+                  data-lang-uk="React-додаток, що використовує REST Countries API з React Router та зміною теми."
+                >
+                  React app using REST Countries API with React Router and
+                  detailed pages with theme switching.
+                </p>
+                <div class="links">
+                  <a
+                    class="flex-row"
+                    href="https://github.com/RegnoCranium/frontend-mentor-projects-advanced/tree/main/rest-countries-api-react"
+                    ><img
+                      src="./imgs/github-brands-solid.svg"
+                      alt="Github icon"
+                    /><span>Github</span></a
+                  >
+                  <a
+                    class="flex-row"
+                    href="https://frontend-mentor-projects-advanced-rest-countries.vercel.app"
+                    ><img src="./imgs/logo-vercel.svg" alt="Vercel icon" /><span
+                      >Live site</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="imgs/multi-step.jpg" alt="img" />
+              <div class="project-info">
+                <p
+                  data-lang-en="Interactive multi-step subscription form for gaming services with step-by-step navigation."
+                  data-lang-uk="Багатокрокова форма підписки на ігрові сервіси з покроковою навігацією."
+                >
+                  Interactive multi-step subscription form for gaming services
+                  with step-by-step navigation.
+                </p>
+                <div class="links">
+                  <a
+                    class="flex-row"
+                    href="https://github.com/RegnoCranium/frontend-mentor-projects-advanced/tree/main/multi-step-react"
+                    ><img
+                      src="./imgs/github-brands-solid.svg"
+                      alt="Github icon"
+                    /><span>Github</span></a
+                  >
+                  <a
+                    class="flex-row"
+                    href="https://frontend-mentor-projects-advanced.vercel.app"
+                    ><img src="./imgs/logo-vercel.svg" alt="Vercel icon" /><span
+                      >Live site</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./imgs/desserts.jpg" alt="img" />
+              <div class="project-info">
+                <p
+                  data-lang-en="Vanilla JavaScript dessert shop with shopping cart functionality and responsive design."
+                  data-lang-uk="Магазин десертів з кошиком, створений на чистому JavaScript без фреймворків."
+                >
+                  Vanilla JavaScript dessert shop with shopping cart
+                  functionality and responsive design.
+                </p>
+                <div class="links">
+                  <a
+                    class="flex-row"
+                    href="https://github.com/RegnoCranium/frontend-mentor-folder-starter/tree/main/product-list-with-cart-main"
+                    ><img
+                      src="./imgs/github-brands-solid.svg"
+                      alt="Github icon"
+                    /><span>Github</span></a
+                  >
+                  <a
+                    class="flex-row"
+                    href="https://frontend-mentor-folder-starter.vercel.app/"
+                    ><img src="./imgs/logo-vercel.svg" alt="Vercel icon" /><span
+                      >Live site</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./imgs/comment-section.jpg" alt="img" />
+              <div class="project-info">
+                <p
+                  data-lang-en="React-powered comments section with user interactions and timestamp handling."
+                  data-lang-uk="Секція коментарів на React з можливістю взаємодії та відстеженням часу."
+                >
+                  React-powered comments section with user interactions and
+                  timestamp handling.
+                </p>
+                <div class="links">
+                  <a
+                    class="flex-row"
+                    href="https://github.com/RegnoCranium/frontend-mentor-folder-starter/tree/main/interactive-comments-section-main-vite"
+                    ><img
+                      src="./imgs/github-brands-solid.svg"
+                      alt="Github icon"
+                    /><span>Github</span></a
+                  >
+                  <a
+                    class="flex-row"
+                    href="https://frontend-mentor-folder-5nj5-git-main-regnocraniums-projects.vercel.app"
+                    ><img src="./imgs/logo-vercel.svg" alt="Vercel icon" /><span
+                      >Live site</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./imgs/calculator.jpg" alt="img" />
+              <div class="project-info">
+                <p
+                  data-lang-en="React calculator with theme switching and local storage for user preferences."
+                  data-lang-uk="Калькулятор на React зі збереженням обраної теми оформлення."
+                >
+                  React calculator with theme switching and local storage for
+                  user preferences.
+                </p>
+                <div class="links">
+                  <a
+                    class="flex-row"
+                    href="https://github.com/RegnoCranium/frontend-mentor-projects-advanced/tree/main/calculator-app-react"
+                    ><img
+                      src="./imgs/github-brands-solid.svg"
+                      alt="Github icon"
+                    /><span>Github</span></a
+                  >
+                  <a
+                    class="flex-row"
+                    href="https://frontend-mentor-projects-advanced-lnv7.vercel.app"
+                    ><img src="./imgs/logo-vercel.svg" alt="Vercel icon" /><span
+                      >Live site</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="btn-right">
+          <img src="./imgs/chevron-right.svg" alt="Chevron right icon" />
+        </button>
+      </div>
+    </section>
+    <section class="contacts-container">
+      <h1
+        data-lang-en="Links and Contacts"
+        data-lang-uk="Посилання та контакти"
+      >
+        Links and Contacts
+      </h1>
+      <div class="contacts">
+        <div>Telegram: <a href="https://t.me/NikitaMords">@NikitaMords</a></div>
+        <div>Email: mordvan37@gmail.com</div>
+        <div>
+          Github: <a href="https://github.com/RegnoCranium">RegnoCranium</a>
+        </div>
+        <div>
+          Frontend Mentor:
+          <a href="https://www.frontendmentor.io/profile/RegnoCranium"
+            >@RegnoCranium</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
