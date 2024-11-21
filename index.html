@@ -14,8 +14,13 @@
   <body>
     <div class="lang-switcher">
       <div class="lang-blend">
-        <button class="lang-btn" data-lang="uk">UA</button> /
-        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="uk">
+          <span class="sr-only">Switch language to ukranian</span>UA
+        </button>
+        /
+        <button class="lang-btn" data-lang="en">
+          <span class="sr-only">Switch language to english</span>EN
+        </button>
       </div>
     </div>
     <section class="top-section full-screen-section">
@@ -142,8 +147,8 @@
     <section class="projects-section">
       <h1 data-lang-en="My Projects" data-lang-uk="Мої проєкти">My Projects</h1>
       <div class="carousel-container">
-        <!-- Add sr-only! -->
         <button id="btn-left">
+          <span class="sr-only">Button left</span>
           <img src="./imgs/chevron-left.svg" alt="Chevron left icon" />
         </button>
         <div class="carousel-display">
@@ -325,6 +330,7 @@
           </div>
         </div>
         <button id="btn-right">
+          <span class="sr-only">Button right</span>
           <img src="./imgs/chevron-right.svg" alt="Chevron right icon" />
         </button>
       </div>
