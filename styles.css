@@ -21,7 +21,7 @@ button {
 
 body {
   margin: 0;
-  background-image: url("./imgs/bg-img.jpg");
+  background-image: url("./imgs/bg-img.webp");
   background-size: contain;
   background-attachment: fixed;
   color: white;
